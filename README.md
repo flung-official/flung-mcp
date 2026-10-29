@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/flung-lockup-on-dark.svg">
-    <img alt="Flung" src="assets/flung-lockup-on-light.svg" width="260">
+    <source media="(prefers-color-scheme: dark)" srcset="https://assets.flung.dev/brand/logo/flung-lockup-on-dark.svg">
+    <img alt="Flung" src="https://assets.flung.dev/brand/logo/flung-lockup-on-light.svg" width="260">
   </picture>
 </p>
 
