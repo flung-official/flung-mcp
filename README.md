@@ -123,6 +123,10 @@ Tool names are a contract: new tools are added, existing ones are never renamed.
 
 Found a security problem? See [SECURITY.md](./SECURITY.md).
 
+## Docs
+
+The full tool reference, with every argument and an example call for each tool, is at [docs.flung.dev/reference/mcp](https://docs.flung.dev/reference/mcp). An agent can read it all at [docs.flung.dev/llms.txt](https://docs.flung.dev/llms.txt).
+
 ## Related
 
 | Repository | What it is |
