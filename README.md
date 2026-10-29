@@ -118,8 +118,8 @@ Tool names are a contract: new tools are added, existing ones are never renamed.
 |---|---|
 | What can the agent reach? | Only the workspace you approved, or the one the API key belongs to. |
 | What does a refusal look like? | A normal tool result with `isError`, a sentence saying what to do next, and `_meta["flung/refusal"]` for clients that branch on it. |
-| What is logged? | One line per tool call: the tool, the workspace, how long it took and whether it worked. Never the key, the token or the arguments. |
-| How do I cut an agent off? | Revoke the app's access or delete its API key; it stops on its next call. |
+| What is logged? | One line per tool call: the tool, whether it worked, the API's status, how long it took, the size of the arguments and a fingerprint of the key. Never the key, the token or what the arguments said. |
+| How do I cut an agent off? | Revoke its API key (`DELETE /v1/api-keys/{id}`); it stops on its next call. An agent signed in with OAuth stops at once when the person who approved it is removed from the workspace. |
 
 Found a security problem? See [SECURITY.md](./SECURITY.md).
 
