@@ -78,6 +78,21 @@ Once it is connected, ask your agent:
 - "Any new comments? Reply thanks to the nice ones."
 - "Post every new item from our blog feed to LinkedIn."
 
+## Workflows
+
+Each does the work of several tools in one call, for the jobs agents are asked for most. An agent picks these first.
+
+| Workflow | What it does |
+|---|---|
+| `review_workspace` | One summary: accounts that need you, posts due soon, posts that failed, and unread comments, with the next step for each. |
+| `publish_to_platforms` | Posts by platform name: finds your accounts, checks each platform's limits, imports images or video from links, and posts now, later, or at the best time. Calling it again does not post twice. |
+| `connect_platforms` | Starts connecting several platforms at once and returns a link for each. |
+| `reconnect_accounts_needing_attention` | A reconnect link for every account that has stopped or is about to. |
+| `retry_failed_posts` | Publishes failed posts again, skipping any whose account still needs reconnecting. |
+| `report_post_performance` | Views, likes, comments and reposts for your latest posts, best first, with totals. |
+
+If a step is refused, the workflow stops there and says which step and why, as the tool would.
+
 ## Tools
 
 | Tool | What it does |
@@ -125,7 +140,7 @@ Found a security problem? See [SECURITY.md](./SECURITY.md).
 
 ## Docs
 
-The full tool reference, with every argument and an example call for each tool, is at [docs.flung.dev/reference/mcp](https://docs.flung.dev/reference/mcp). An agent can read it all at [docs.flung.dev/llms.txt](https://docs.flung.dev/llms.txt).
+The full tool reference, with every argument and an example call for each workflow and tool, is at [docs.flung.dev/mcp/tools](https://docs.flung.dev/mcp/tools). An agent can read it all at [docs.flung.dev/llms.txt](https://docs.flung.dev/llms.txt).
 
 ## Related
 
